@@ -1,6 +1,6 @@
 ---
 title: Layouts no xamarin. Forms
-description: Xamarin. Forms tem vários layouts e recursos para organizar o conteúdo na tela, e este artigo explica-los.
+description: Xamarin.Forms tem vários layouts e recursos para organizar o conteúdo na tela, e este artigo explica-los.
 ms.prod: xamarin
 ms.assetid: 65030DA3-C7C1-4A02-B478-811073C39139
 ms.technology: xamarin-forms
@@ -15,17 +15,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 07/12/2018
 ms.locfileid: "38995749"
 ---
-# <a name="layouts-in-xamarinforms"></a>Layouts no xamarin. Forms
+# <a name="layouts-in-xamarinforms"></a>Layouts no Xamarin.Forms
 
-Xamarin. Forms tem vários layouts e recursos para organizar o conteúdo na tela.
+Xamarin.Forms tem vários layouts e recursos para organizar o conteúdo na tela.
 
 > [!VIDEO https://youtube.com/embed/4HlLjTZQzjM]
 
-**Layouts do xamarin. Forms, por [Xamarin University](https://university.xamarin.com/)**
+**Layouts do Xamarin.Forms, por [Xamarin University](https://university.xamarin.com/)**
 
 Cada controle de layout é descrito abaixo, bem como detalhes sobre como lidar com alterações de orientação de tela:
 
-* **[StackLayout](stack-layout.md)**  &ndash; usado para organizar os modos de exibição linearmente, horizontal ou verticalmente. Modos de exibição em um StackLayout podem ser alinhados ao centro, esquerdo ou direito do layout.
+* **[StackLayout](stack-layout.md)**  &ndash; usado para organizar os modos de exibição linearmente, horizontal ou verticalmente. Modos de exibição em um StackLayout podem ser alinhados ao centro, esquerda ou direita do layout.
 * **[AbsoluteLayout](absolute-layout.md)**  &ndash; usado para organizar os modos de exibição, definindo as coordenadas & tamanho em termos de valores absolutos ou taxas. AbsoluteLayout pode ser usado para a camada de modos de exibição, bem como ancorá-los para a esquerda, direita ou centralizado.
 * **[RelativeLayout](relative-layout.md)**  &ndash; usado para organizar os modos de exibição, definindo as restrições em relação a dimensões e a posição de seu pai.
 * **[Grade](grid.md)**  &ndash; usado para organizar os modos de exibição em uma grade. Linhas e colunas podem ser especificadas em termos de valores absolutos ou taxas.
@@ -39,21 +39,21 @@ Cada controle de layout é descrito abaixo, bem como detalhes sobre como lidar c
 * **[Criar um Layout personalizado](custom.md)**  &ndash; explica como criar uma classe de layout personalizado.
 * **[Compactação de layout](layout-compression.md)**  &ndash; remove especificado o layout da árvore visual em uma tentativa de melhorar o desempenho de renderização da página.
 
-Controles de plataforma também podem ser usados diretamente no xamarin. Forms layouts com [ **incorporação nativa** ](~/xamarin-forms/platform/native-views/index.md) (novo no xamarin. Forms 2.2), e você pode [ **criar layouts personalizados** ](custom.md) para atender às necessidades específicas.
+Controles de plataforma também podem ser usados diretamente no Xamarin.Forms layouts com [ **incorporação nativa** ](~/xamarin-forms/platform/native-views/index.md) (novo no Xamarin.Forms 2.2), e você pode [ **criar layouts personalizados** ](custom.md) para atender às necessidades específicas.
 
 O gráfico a seguir visualiza os controles de layout:
 
 [![](images/layouts-sml.png "Xamarin. Forms Layouts")](images/layouts.png#lightbox "Layouts do xamarin. Forms")
 
-## <a name="choosing-the-right-layout"></a>Escolher o Layout da direita
+## <a name="choosing-the-right-layout"></a>Escolher o Layout Certo
 
-Os layouts de que escolha no seu aplicativo podem ajudar ou prejudicar a você como você está criando um aplicativo xamarin. Forms atraente e utilizável. Dedicar algum tempo para considerar como funciona cada layout pode ajudá-lo a escrever código de interface do usuário mais limpo e mais escalonável. Uma tela pode ter uma combinação de layouts diferentes para alcançar um design específico.
+Os layouts que você escolher para seu aplicativo podem ajudar ou prejudicar como você está criando um aplicativo Xamarin.Forms atraente e utilizável. Dedicar algum tempo para considerar como funciona cada layout pode ajudá-lo a escrever código de interface do usuário mais limpo e escalonável. Uma tela pode ter uma combinação de layouts diferentes para alcançar um design específico.
 
 ### <a name="stacklayoutstack-layoutmd"></a>[StackLayout](stack-layout.md)
 
-O `StackLayout` é usado para exibir os modos de exibição ao longo de uma linha horizontal ou vertical. Posição e o tamanho do layout do é determinado com base em um modo de exibição `HeightRequest`, `WidthRequest`, `HorizontalOptions` e `VerticalOptions`. `StackLayout` geralmente é usado como o layout de base, organizando outros layouts na tela.
+O `StackLayout` é usado para exibir os modos de exibição ao longo de uma linha horizontal ou vertical. Posição e tamanho do layout são determinados com base em um modo de exibição `HeightRequest`, `WidthRequest`, `HorizontalOptions` e `VerticalOptions`. `StackLayout` geralmente é usado como o layout de base, organizando outros layouts na tela.
 
-Para obter um exemplo de quando `StackLayout` seria uma boa opção, considere um aplicativo que precisa para exibir um botão e um rótulo, com o rótulo alinhado à esquerda e o botão alinhado à direita.
+Para obter um exemplo de quando o `StackLayout` seria uma boa opção, considere um aplicativo que precisa para exibir um botão e um rótulo, com o rótulo alinhado à esquerda e o botão alinhado à direita.
 
 ```xaml
 <StackLayout Orientation="Horizontal">
@@ -77,7 +77,7 @@ O `FlexLayout` é semelhante ao `StackLayout` em que ele exibe os modos de exibi
 </FlexLayout>
 ```
 
-No entanto, se houver muitos filhos para caber em uma única linha ou columm, `FlexLayout` também é capaz de encapsular essas exibições. `FlexLayout` se baseia no módulo de Layout de caixa flexível CSS e tem muitas das mesmas opções internas para posicionar e alinhar seus filhos.
+No entanto, se houver muitos filhos para caber em uma única linha ou coluna, `FlexLayout` também é capaz de encapsular essas exibições. `FlexLayout` se baseia no módulo de Layout de caixa flexível CSS e tem muitas das mesmas opções internas para posicionar e alinhar seus filhos.
 
 ### <a name="absolutelayoutabsolute-layoutmd"></a>[AbsoluteLayout](absolute-layout.md)
 
